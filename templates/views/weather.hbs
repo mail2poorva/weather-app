@@ -1,0 +1,74 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Weather App</title>
+    <link rel="stylesheet" href="CSS/weather.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/fontawesome.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+    {{>navbar}}
+      <main>
+        <div class="cloudSun">
+          <img src="./images/cloud.png" alt="" class="cloud" />
+          <img src="./images/sun.png" alt="" class="sun" />
+        </div>
+        <div class="content">
+           <div> 
+             <form class="location" >
+
+            <input
+              type="text"
+              name="location"
+              id="location"
+              placeholder="Search the location"
+            autocomplete="off"
+            />
+            <button type="submit" class="search"><i class="fas fa-search"  id="search"></i></button>
+         
+          </form>
+         </div>
+        </div>
+
+        <div class="temp-container">
+          <div class="temp-container-1">
+            <p id="date">24 Jan, Monday</p>
+            <h4 id="city">PLease enter the location</h4>
+            <h2 id="temp"></h2>
+          </div>
+          <div class="temp-container-2">
+            <div class="weather">
+              <h3 id="weathertype"></h3>
+              <div id="icon"></div>
+            </div>
+            <div class="details">
+              <p id="min">
+                
+              </p>
+              <p id="max">
+                
+              </p>
+              <p id="wind">
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </header>
+
+
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

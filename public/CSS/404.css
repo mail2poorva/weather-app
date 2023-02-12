@@ -1,0 +1,34 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+}
+
+a {
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  padding: 20px 40px;
+  background-color: #4a9bd5;
+  color: white;
+}
+
+span {
+  transition: margin-left 0.5s;
+}
+
+a:hover span {
+  margin-left: 10px;
+}

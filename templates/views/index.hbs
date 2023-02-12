@@ -1,0 +1,39 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Weather App</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      {{>navbar}}
+      <main>
+        <div class="cloudSun">
+          <img src="./images/cloud.png" alt="" class="cloud" />
+          <img src="./images/sun.png" alt="" class="sun" />
+        </div>
+        <div class="content">
+          <h1>
+            Come for the weather,
+            <br />
+            Stay for the
+            <br />
+            experience
+          </h1>
+          <a href="/weather">Check Weather</a>
+        </div>
+
+        <div class="waves">
+          <img src="./images/wave1.png" alt="" class="wave-1" />
+          <img src="./images/wave2.png" alt="" class="wave-2" />
+        </div>
+      </main>
+    </header>
+  </body>
+</html>
